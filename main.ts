@@ -3,8 +3,8 @@ radio.setTransmitSerialNumber(true)
 basic.forever(function() {
     
     let data = {
-        x: Math.floor(input.acceleration(Dimension.X)/8),
-        y: Math.floor(input.acceleration(Dimension.Y)/8),
+        x: Math.floor(input.acceleration(Dimension.X)/16),
+        y: Math.floor(input.acceleration(Dimension.Y)/16),
         a: input.buttonIsPressed(Button.A),
         b: input.buttonIsPressed(Button.B),
         l: input.logoIsPressed()
